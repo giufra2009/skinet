@@ -3,4 +3,4 @@ bin
 .suo
 .csproj.user
 appsettings.json
-*.db
+*.json
