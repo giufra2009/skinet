@@ -21,7 +21,7 @@ namespace Infrastructure.Data
         public async Task<Product> GetProductByIdAsync(int id)
         {
             return await _context.Products
-                 .Include(p => p.ProductType)
+                .Include(p => p.ProductType)
                 .Include(p => p.ProductBrand)
                 .FirstOrDefaultAsync(p=>p.Id==id);
         }
